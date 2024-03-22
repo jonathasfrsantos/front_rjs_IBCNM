@@ -1,0 +1,54 @@
+.calendar-container {
+  width: 21%;
+  border: rgb(124, 117, 117) solid 1px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+   margin: 200px 0 0 20px;
+}
+
+.form-inline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1em;
+  white-space: nowrap;
+ 
+}
+
+.form-group label {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.form-control {
+  width: 70%;
+}
+
+.footer-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+}
+
+
+.footer-group button {
+  width: 40%;
+}
+

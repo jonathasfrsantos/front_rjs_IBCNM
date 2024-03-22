@@ -1,0 +1,77 @@
+.cards-container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin: 20px 10px 20px 20px;;
+   
+  }
+
+  .card-entrada {
+    margin-right: 60px;
+    width: 250px;
+    height: 100px;
+    border-radius: 3%;
+    border: 0.5px solid green;
+  }
+  .card-entrada h1 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .card-entrada p {
+    color: green;
+  }
+
+  .card-saida {
+    margin-right: 60px;
+    width: 250px;
+    height: 100px;
+    border-radius: 3%;
+    border: 0.5px solid rgb(197, 7, 7);
+  }
+
+  .card-saida h1 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .card-saida p {
+    color: red;
+  }
+
+  .card-saldo-anterior {
+    margin-right: 60px;
+    width: 250px;
+    height: 100px;
+    border-radius: 3%;
+    border: 0.5px solid rgb(48, 190, 255);
+  }
+
+  .card-saldo-anterior h1 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .card-saldo-anterior p {
+    color: rgb(48, 190, 255);
+  }
+  .card-saldo-atual {
+    margin-right: 60px;
+    width: 250px;
+    height: 100px;
+    border-radius: 3%;
+    border: 0.5px solid green;
+  }
+
+  .card-saldo-atual h1  {
+    margin-top: 10px;
+    font-size: 20px;
+
+  }
+
+  .card-saldo-atual p {
+    color: rgb(48, 255, 76);
+  }
+  
+

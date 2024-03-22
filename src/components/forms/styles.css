@@ -1,0 +1,104 @@
+.modal-container {
+    background: linear-gradient(to bottom right, #fdfdfd, #faf5f5);
+    border-radius: 5%;
+}
+.modal-header {
+    background: rgb(37, 78, 192);
+}
+
+.modal-header closebutton {
+    color: white;
+}
+
+
+.modal-title {
+    margin-left: 120px;
+    text-align: center;
+    display: flex;
+    color: aliceblue;
+    font-size: 30px;
+   
+}
+
+.radio-select-container {
+    margin-bottom: 40px;
+}
+
+.radio-select-title {
+    text-align: center;
+    margin: 10px 0px 10px 0px ;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.radio-select {
+    margin-left: 150px;
+    
+}
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}
+
+
+.form-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-start-end-radius: 20px;
+  }
+  
+  .form-container label {
+
+    font-weight: bold;
+    flex-basis: 30%;
+    margin-bottom: 10px;
+    margin-left: 18px;
+    font-size: 20px;
+  }
+  
+  .form-container input {
+    flex-basis: 65%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .banco-select {
+    flex-basis: 65%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .modal-footer {
+    margin-left: 10px;
+    justify-content: center;
+  }
+
+  .modal-footer button {
+    font-size: 20px;
+    margin-left: 10px;
+    
+  }
+
+  .error-message {
+    text-align: center;
+    color: red;
+    margin-left: 20px;
+    font-size: 20px
+  }
+  
+
+  .date-input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+

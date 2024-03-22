@@ -1,0 +1,306 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+   
+
+}
+
+.sidebar-container {
+    grid-column: 1;
+}
+
+.cards-container, .header-container, .date-selector-and-search-bar, .table-container {
+    grid-column: 2;
+}
+
+/* SIDEBAR */
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-container .sidebar {
+    flex: 1;
+}
+
+.sidebar-container .sidebar {
+    flex: 1;
+}
+
+.sidebar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 100%;
+    background: rgb(31, 39, 78);
+    transition: width 0.4s;
+}
+
+.sidebar.open {
+    width: 260px;
+}
+.sidebar .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+}
+
+.sidebar header {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding: 0 6px;
+    background: rgb(31, 39, 78/ 25%);
+
+}
+
+.sidebar-burger {
+    width: 44px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    color: #f9f9f9;
+}
+
+.sidebar nav {
+    display: grid;
+    padding: 6px;
+    gap: 2px;
+}
+
+.sidebar nav > button {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    font-size: 16px;
+    line-height: 1;
+    padding: 0 12px;
+    border-radius: 8px;
+    color: #f9f9f9;
+}
+
+
+
+
+
+/* CARDS */
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-revenues,
+.card-expenses,
+.card-previous-balance,
+.card-current-balance {
+    text-align: center;
+    margin-left: 30px;
+    color:white;
+    flex: 0 0 calc(18% - 30px);
+    height: 150px;
+    border-radius: 5px;
+}
+
+.card-revenues > .card-header,
+.card-expenses > .card-header,
+.card-previous-balance > .card-header,
+.card-current-balance > .card-header
+{
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px;
+}
+
+.card-body h1 {
+    margin:10px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+
+.card-footer p {
+    border-top: 1px solid white;
+    margin-top: 20px;
+    padding-top: 5px;
+    font-size: 18px;
+}
+
+.card-revenues{
+    background: rgba(23, 117, 203, 1) ;/* Gradiente de azul para um azul mais escuro */
+    border: 1px solid white;
+}
+
+.card-revenues * {
+    background: rgba(23, 117, 203, 1);
+    color: white; /* Defina a cor do texto para branco */
+}
+
+.card-expenses {
+    background:rgba(203, 69, 69, 1);
+
+}
+.card-expenses * {
+    background: rgba(203, 69, 69, 1);
+    
+}
+
+.card-previous-balance {
+    background: rgba(86, 76, 76, 1);
+}
+
+.card-previous-balance * {
+    background: rgba(86, 76, 76, 1);
+}
+
+.card-current-balance {
+    background: rgba(115, 115, 120, 1);
+}
+
+.card-current-balance  * {
+    background: rgba(115, 115, 120, 1 );
+}
+
+/* TITLE */
+.text-title {
+    margin: 10px 10px;
+    text-align: center;
+    height: 20px;
+}
+
+.text-title h2 {
+    font-size: 25px;
+
+}
+
+/* BUTTON CONTAINER */
+
+.button-container {
+    margin-top: 70px;
+    text-align: left;
+}
+
+
+.button-container * {
+    margin-right: 20px;
+    height: 30px; /* modificar depoois, diminuir e colocar símbolos */
+    font-size: 14px;
+}
+
+.button-container button {
+    flex: none; /* Impede que os botões se ajustem ao tamanho do texto */
+    width: 150px; /* Largura fixa para os botões */
+    height: 30px; /* Altura fixa para os botões */
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+/* DATE SELECTOR AND SEARCH BAR */
+
+.date-selector-and-search-bar {
+    display: flex; /* Utiliza flexbox para organizar os elementos */
+    justify-content: space-between; /* Alinha os elementos em lados opostos do contêiner */
+    margin: 20px 10px;
+}
+
+.btn-date-selector {
+    order: 1; /* Define a ordem do botão para aparecer primeiro */
+    width: 15%;
+    height: 30px;
+}
+
+.date-selector-and-search-bar input[type="text"] {
+    order: 2; /* Define a ordem do input para aparecer depois do botão */
+    margin-left: auto; /* Move o input para o canto direito */
+    margin-right: 10px;
+    background: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 20%;
+}
+
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.dropdown-item-horizontal p {
+    margin-right: 5px;
+  }
+
+/* TABLE */
+
+.table-container {
+    margin: 0 50px 0 10px;
+}
+
+.table-main {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+  
+}
+
+.table-main td,
+.table-main th {
+    border: 1px solid #ddd;
+    padding: 5px; /* Adiciona preenchimento interno às células */
+}
+
+.table-main tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-main tr:hover {
+    background-color: #ddd;
+}
+
+.table-main th {
+    text-align: center;
+    background-color: #0e3469;
+    color: rgb(255, 255, 255);
+}
+
+/* Remova a altura fixa para o cabeçalho da tabela */
+.table-main thead th {
+    /* height: 10px; */
+}
+
+.table-main input,
+.table-main select {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.table-main td {
+    text-align: center;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,124 @@
+.all-container {
+    text-align: left;
+}
+
+.btn-container {
+
+margin-top: 20px;
+margin-left: 35px;
+display: inline;
+text-align: left;
+
+}
+@media print {
+    * {
+      visibility: visible;
+    }
+    
+    .head-column-actions {
+      display: none !important;
+    }
+  }
+
+  @media print {
+    * {
+      visibility: visible;
+    }
+    
+    .row-actions {
+      display: none !important;
+    }
+  }
+
+
+@media print {
+    * {
+      visibility: visible;
+    }
+    
+    .btn-container {
+      display: none !important;
+    }
+  }
+  
+
+.btn-container button {
+    margin-left: 20px;
+    width: 15%;
+    
+}
+
+.search-container {
+    width: 24%;
+    display: inline-block;
+    margin-left: 15px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+.search-container input {
+   width: 90%;
+    margin-right: 5px;
+    border-color: transparent;
+    
+}
+
+.search-icon {
+    margin-right: 5px;
+}
+
+.table-container {
+    width: 90%;
+    margin-left: 55px;
+    margin-top: 20px;
+   
+}
+
+
+thead {
+    background: rgb(37,78,192);
+    color: white;
+}
+
+tr {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 30px;
+}
+
+.entrada {
+    color: green;
+}
+
+.saida {
+    color : red;
+}
+
+button {
+    border: transparent;
+    background-color: transparent;
+}
+
+button .edit-icon {
+    color: rgb(36, 90, 11);
+}
+
+button .delete-icon {
+    color: rgb(204, 61, 61);
+}
+
+.edit-icon {
+    border: white;
+}
+
+
+
